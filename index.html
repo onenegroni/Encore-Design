@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <meta name="description" content="Encore Design es un estudio independiente de diseño y desarrollo web en Alicante. Explora el portfolio y pide una propuesta a medida.">
-  <meta name="theme-color" content="#f6f5f1">
+  <meta name="theme-color" content="#100b09">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_GB">
@@ -45,10 +45,10 @@
     </header>
 
     <main id="main">
-      <section class="hero shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy shell">
           <p class="eyebrow">Estudio independiente · Alicante</p>
-          <h1 id="hero-title"><span>Diseño web</span> <span>para negocios</span> <span>con carácter.</span></h1>
+          <h1 id="hero-title"><span>Diseño web</span> <span>para negocios</span> <span class="hero-emphasis">con carácter.</span></h1>
           <p class="lede">Diseño y desarrollo sitios y aplicaciones web a medida. También creo tiendas online, integro pagos y desarrollo portales para clientes.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Ver proyectos</a>
@@ -63,150 +63,116 @@
 
       <section class="gallery" id="work" aria-labelledby="work-title">
         <div class="shell work">
-          <div class="section-intro">
-            <h2 id="work-title">Portfolio</h2>
-            <p>Explora seis webs y vuelve a ver sus animaciones de entrada.</p>
-          </div>
+          <h2 id="work-title">Portfolio</h2>
           <div class="work-grid">
             <article class="project project-azogue">
-              <a class="project-stage stage-azogue" href="proyectos/club-azogue.html" aria-label="Abrir Club Azogue" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/azogue.jpg" alt="">
-                  <video class="mini-art mini-film" data-preview-film data-src="assets/proyectos/azogue-ambiente.mp4" muted playsinline preload="none"></video>
-                  <div class="mini-bar"><span class="mini-brand"><span class="mini-symbol"></span>Club Azogue</span><span class="mini-nav"><span>Cócteles</span><span>Reservas</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Coctelería de autor · Madrid</span>
-                    <span class="mini-title"><span class="mini-line"><span>La noche</span></span> <span class="mini-line"><span>empieza aquí.</span></span></span>
-                    <span class="mini-lede">Cócteles de autor en el Barrio de las Letras.</span>
-                    <span class="mini-action">Explorar la carta</span>
+              <div class="project-visual">
+                <a class="project-stage stage-azogue" href="proyectos/club-azogue.html" aria-label="Abrir Club Azogue" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/proyectos/azogue.jpg" alt="">
+                    <video class="mini-art mini-film" data-preview-film data-src="assets/proyectos/azogue-ambiente.mp4" muted playsinline preload="none"></video>
+                    <div class="mini-bar"><span class="mini-brand"><span class="mini-symbol"></span>Club Azogue</span><span class="mini-nav"><span>Cócteles</span><span>Reservas</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Coctelería de autor · Madrid</span>
+                      <span class="mini-title"><span class="mini-line"><span>La noche</span></span> <span class="mini-line"><span>empieza aquí.</span></span></span>
+                      <span class="mini-lede">Cócteles de autor en el Barrio de las Letras.</span>
+                      <span class="mini-action">Explorar la carta</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Concepto destacado · Coctelería en Madrid</p>
-                  <h3>Club Azogue</h3>
-                  <p class="project-description">Una entrada cinematográfica, una carta que puedes explorar copa a copa y una reserva de demostración.</p>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Club Azogue" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Club Azogue" hidden></button>
               </div>
+              <h3 class="project-name">Club Azogue</h3>
             </article>
             <article class="project project-nispero">
-              <a class="project-stage stage-nispero" href="proyectos/mesa-del-nispero.html" aria-label="Abrir La Mesa del Níspero" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/nispero.jpg" alt="" loading="lazy">
-                  <div class="mini-bar"><span class="mini-brand">La Mesa del Níspero</span><span class="mini-nav"><span>Carta</span><span>Reservas</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Cocina de temporada · Madrid</span>
-                    <span class="mini-title"><span class="mini-line"><span>La mesa</span></span> <span class="mini-line"><span>está puesta.</span></span></span>
-                    <span class="mini-lede">Verduras de temporada y sobremesas largas en Chamberí.</span>
-                    <span class="mini-action">Ver la carta</span>
+              <div class="project-visual">
+                <a class="project-stage stage-nispero" href="proyectos/mesa-del-nispero.html" aria-label="Abrir La Mesa del Níspero" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/proyectos/nispero.jpg" alt="" loading="lazy">
+                    <div class="mini-bar"><span class="mini-brand">La Mesa del Níspero</span><span class="mini-nav"><span>Carta</span><span>Reservas</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Cocina de temporada · Madrid</span>
+                      <span class="mini-title"><span class="mini-line"><span>La mesa</span></span> <span class="mini-line"><span>está puesta.</span></span></span>
+                      <span class="mini-lede">Verduras de temporada y sobremesas largas en Chamberí.</span>
+                      <span class="mini-action">Ver la carta</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Concepto · Restaurante en Madrid</p>
-                  <h3>La Mesa del Níspero</h3>
-                  <p class="project-description">Cocina de temporada, un comedor soleado y una carta fácil de consultar.</p>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de La Mesa del Níspero" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de La Mesa del Níspero" hidden></button>
               </div>
+              <h3 class="project-name">La Mesa del Níspero</h3>
             </article>
             <article class="project project-impronta">
-              <a class="project-stage stage-impronta" href="https://improntaestampa.pages.dev/" aria-label="Abrir Impronta Estampa" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/impronta-prendas.webp" alt="" loading="lazy">
-                  <div class="mini-bar"><span class="mini-brand">Impronta Estampa</span><span class="mini-nav"><span>Diseñador 3D</span><span>Productos</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Sublimación full color · San Juan</span>
-                    <span class="mini-title"><span class="mini-line"><span>Tu campera es</span></span> <span class="mini-line"><span>tu historia.</span></span></span>
-                    <span class="mini-lede">Egresados, equipos, banderas y empresas.</span>
-                    <span class="mini-action">Diseñá el tuyo en 3D</span>
+              <div class="project-visual">
+                <a class="project-stage stage-impronta" href="https://improntaestampa.pages.dev/" aria-label="Abrir Impronta Estampa" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/impronta-prendas.webp" alt="" loading="lazy">
+                    <div class="mini-bar"><span class="mini-brand">Impronta Estampa</span><span class="mini-nav"><span>Diseñador 3D</span><span>Productos</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Sublimación full color · San Juan</span>
+                      <span class="mini-title"><span class="mini-line"><span>Tu campera es</span></span> <span class="mini-line"><span>tu historia.</span></span></span>
+                      <span class="mini-lede">Egresados, equipos, banderas y empresas.</span>
+                      <span class="mini-action">Diseñá el tuyo en 3D</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Proyecto real · Configurador 3D</p>
-                  <h3>Impronta Estampa</h3>
-                  <p class="project-description">Un taller de sublimación con diseñador de prendas en 3D y presupuestos por WhatsApp.</p>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Impronta Estampa" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Impronta Estampa" hidden></button>
               </div>
+              <h3 class="project-name">Impronta Estampa</h3>
             </article>
             <article class="project project-umbral">
-              <a class="project-stage stage-umbral" href="proyectos/umbral.html" aria-label="Abrir Umbral" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/umbral-entrenamiento.jpg" alt="" loading="lazy">
-                  <div class="mini-bar"><span class="mini-brand">Umbral</span><span class="mini-nav"><span>Clases</span><span>Área de socios</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Club de fuerza y acondicionamiento</span>
-                    <span class="mini-title"><span class="mini-line"><span>Gana</span></span> <span class="mini-line"><span>terreno.</span></span></span>
-                    <span class="mini-lede">Fuerza, técnica y constancia. Entrena a tu ritmo.</span>
-                    <span class="mini-action">Ver horarios</span>
+              <div class="project-visual">
+                <a class="project-stage stage-umbral" href="proyectos/umbral.html" aria-label="Abrir Umbral" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/proyectos/umbral-entrenamiento.jpg" alt="" loading="lazy">
+                    <div class="mini-bar"><span class="mini-brand">Umbral</span><span class="mini-nav"><span>Clases</span><span>Área de socios</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Club de fuerza y acondicionamiento</span>
+                      <span class="mini-title"><span class="mini-line"><span>Gana</span></span> <span class="mini-line"><span>terreno.</span></span></span>
+                      <span class="mini-lede">Fuerza, técnica y constancia. Entrena a tu ritmo.</span>
+                      <span class="mini-action">Ver horarios</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Concepto · Gimnasio</p>
-                  <h3>Umbral</h3>
-                  <p class="project-description">Un club de fuerza con un área de socios para consultar el plan y gestionar reservas.</p>
-                  <a class="project-link" href="proyectos/umbral-socios.html">Probar el área de socios</a>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Umbral" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Umbral" hidden></button>
               </div>
+              <h3 class="project-name">Umbral</h3>
             </article>
             <article class="project project-claro">
-              <a class="project-stage stage-claro" href="proyectos/claro.html" aria-label="Abrir Claro Estética" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/claro.jpg" alt="" loading="lazy">
-                  <div class="mini-bar"><span class="mini-brand">Claro Estética</span><span class="mini-nav"><span>Tratamientos</span><span>Citas</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Clínica de estética facial</span>
-                    <span class="mini-title"><span class="mini-line"><span>Cuidar tu piel</span></span> <span class="mini-line"><span>empieza aquí.</span></span></span>
-                    <span class="mini-lede">Una consulta tranquila para explorar tu cuidado facial.</span>
-                    <span class="mini-action">Ver citas</span>
+              <div class="project-visual">
+                <a class="project-stage stage-claro" href="proyectos/claro.html" aria-label="Abrir Claro Estética" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/proyectos/claro.jpg" alt="" loading="lazy">
+                    <div class="mini-bar"><span class="mini-brand">Claro Estética</span><span class="mini-nav"><span>Tratamientos</span><span>Citas</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Clínica de estética facial</span>
+                      <span class="mini-title"><span class="mini-line"><span>Cuidar tu piel</span></span> <span class="mini-line"><span>empieza aquí.</span></span></span>
+                      <span class="mini-lede">Una consulta tranquila para explorar tu cuidado facial.</span>
+                      <span class="mini-action">Ver citas</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Concepto · Clínica estética</p>
-                  <h3>Claro Estética</h3>
-                  <p class="project-description">Servicios faciales y una cita de demostración en un diseño tranquilo.</p>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Claro Estética" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Claro Estética" hidden></button>
               </div>
+              <h3 class="project-name">Claro Estética</h3>
             </article>
             <article class="project project-filtro">
-              <a class="project-stage stage-filtro" href="proyectos/fuera-de-filtro.html" aria-label="Abrir Fuera de Filtro" data-preview>
-                <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/filtro.jpg" alt="" loading="lazy">
-                  <div class="mini-bar"><span class="mini-brand">Fuera de Filtro</span><span class="mini-nav"><span>Carta</span><span>Visita</span></span></div>
-                  <div class="mini-copy">
-                    <span class="mini-kicker">Barra de café de especialidad</span>
-                    <span class="mini-title"><span class="mini-line"><span>Café.</span></span> <span class="mini-line"><span>Sin manual.</span></span></span>
-                    <span class="mini-lede">Espresso, bebidas frías y algo dulce.</span>
-                    <span class="mini-action">Ver la carta</span>
+              <div class="project-visual">
+                <a class="project-stage stage-filtro" href="proyectos/fuera-de-filtro.html" aria-label="Abrir Fuera de Filtro" data-preview>
+                  <div class="mini-page" aria-hidden="true">
+                    <img class="mini-art" src="assets/proyectos/filtro.jpg" alt="" loading="lazy">
+                    <div class="mini-bar"><span class="mini-brand">Fuera de Filtro</span><span class="mini-nav"><span>Carta</span><span>Visita</span></span></div>
+                    <div class="mini-copy">
+                      <span class="mini-kicker">Barra de café de especialidad</span>
+                      <span class="mini-title"><span class="mini-line"><span>Café.</span></span> <span class="mini-line"><span>Sin manual.</span></span></span>
+                      <span class="mini-lede">Espresso, bebidas frías y algo dulce.</span>
+                      <span class="mini-action">Ver la carta</span>
+                    </div>
                   </div>
-                </div>
-                <span class="stage-open" aria-hidden="true">Abrir web</span>
-              </a>
-              <div class="project-copy">
-                <div>
-                  <p class="project-type">Concepto · Cafetería</p>
-                  <h3>Fuera de Filtro</h3>
-                  <p class="project-description">Café de especialidad con una identidad alternativa y una carta interactiva.</p>
-                </div>
-                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Fuera de Filtro" hidden>Repetir entrada</button>
+                </a>
+                <button class="replay" type="button" data-replay aria-label="Repetir la entrada de Fuera de Filtro" hidden></button>
               </div>
+              <h3 class="project-name">Fuera de Filtro</h3>
             </article>
           </div>
         </div>
@@ -217,24 +183,19 @@
           <div>
             <p class="eyebrow">Proceso</p>
             <h2 id="process-title">Primero,<br>lo ves.</h2>
-            <p class="process-lede">Abre una primera propuesta en tu propio móvil y decide con algo concreto delante.</p>
           </div>
           <ol class="process-list" role="list">
-            <li><span class="process-step" aria-hidden="true">01</span><h3>Una demo para tu negocio</h3><p>Planteo una web alrededor de lo que más necesitan tus clientes, como ver la carta, pedir cita o llegar hasta ti.</p></li>
-            <li><span class="process-step" aria-hidden="true">02</span><h3>Tu contenido, tu estilo</h3><p>Ajustamos el diseño con tus fotos, tu oferta y la forma de contacto que prefieras.</p></li>
-            <li><span class="process-step" aria-hidden="true">03</span><h3>A punto para abrir</h3><p>Revisas el resultado y, con tu visto bueno, conectamos el dominio y publicamos.</p></li>
+            <li><span class="process-step" aria-hidden="true">01</span><h3>Una demo para tu negocio</h3><p>Prueba la primera versión en tu móvil.</p></li>
+            <li><span class="process-step" aria-hidden="true">02</span><h3>Tu contenido, tu estilo</h3><p>Afinamos el diseño con tus fotos y tu contenido.</p></li>
+            <li><span class="process-step" aria-hidden="true">03</span><h3>A punto para abrir</h3><p>Con tu visto bueno, conecto el dominio y publico.</p></li>
           </ol>
         </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="shell contact-layout">
-          <div>
-            <p class="eyebrow">Alicante</p>
-            <h2 id="contact-title">Tu negocio.<br>Tu próxima web.</h2>
-          </div>
+          <h2 id="contact-title">Tu próxima web.</h2>
           <div class="contact-action">
-            <p>Cuéntame qué haces y qué te gustaría que tus clientes encontraran al buscarte.</p>
             <a class="button button-primary" id="contact-link" data-whatsapp-message="Hola, me gustaría hablar sobre una web para mi negocio." hidden>Escríbeme por WhatsApp</a>
             <p id="contact-note" class="contact-note">Los datos de contacto estarán disponibles al publicar la web.</p>
           </div>
