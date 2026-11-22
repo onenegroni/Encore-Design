@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#554026">
+  <meta name="description" content="La Mesa del Níspero, un restaurante de barrio ficticio en Madrid con cocina de temporada.">
+  <title>La Mesa del Níspero | Concepto de Encore Design</title>
+  <link rel="stylesheet" href="intro-motion.css">
+  <link rel="stylesheet" href="conceptos.css">
+  <link rel="stylesheet" href="hospitalidad.css">
+  <script src="conceptos.js" defer></script>
+</head>
+<body class="nispero hospitality">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span>Concepto de Encore Design</span><a href="../index.html#work">Volver al Portfolio</a></div>
+  <main id="contenido">
+    <section class="splash" aria-labelledby="hero-title">
+      <img class="hero-image" src="../assets/proyectos/nispero.jpg" width="1672" height="941" alt="" fetchpriority="high">
+      <header class="site-nav shell">
+        <a class="brand" href="#contenido">La Mesa del Níspero</a>
+        <nav aria-label="Navegación principal"><a href="#carta">Carta</a><a href="#comedor">El comedor</a><a class="nav-reserve" href="#reserva">Reservas</a></nav>
+      </header>
+      <div class="hero-copy shell">
+        <p class="kicker">Cocina de temporada · Madrid</p>
+        <h1 id="hero-title"><span class="title-line"><span>La mesa</span></span> <span class="title-line"><span>está puesta.</span></span></h1>
+        <p class="lede">Verduras de temporada, pan para mojar y sobremesas largas en Chamberí.</p>
+        <div class="actions"><a class="button primary" href="#carta">Ver la carta</a><a class="button secondary" href="#reserva">Reservar mesa</a></div>
+      </div>
+    </section>
+
+    <section class="content shell hospitality-menu" id="carta" aria-labelledby="carta-title" data-filter-widget>
+      <div class="section-head"><p class="kicker">Carta de muestra</p><h2 id="carta-title">Lo que trae<br>la temporada.</h2></div>
+      <div class="filter-bar" role="group" aria-label="Filtrar la carta"><button type="button" data-filter="all" aria-pressed="true">Toda la carta</button><button type="button" data-filter="entrar" aria-pressed="false">Para empezar</button><button type="button" data-filter="platos" aria-pressed="false">Platos</button><button type="button" data-filter="postres" aria-pressed="false">Postres</button></div>
+      <dl class="hospitality-list">
+        <div data-kind="entrar"><dt>Pan de masa madre</dt><dd class="dish-note">Aceite de oliva y mantequilla tostada.</dd><dd class="dish-price">5 €</dd></div>
+        <div data-kind="entrar"><dt>Puerros a la brasa</dt><dd class="dish-note">Almendra, limón y hierbas frescas.</dd><dd class="dish-price">13 €</dd></div>
+        <div data-kind="platos"><dt>Verduras en azafrán</dt><dd class="dish-note">Zanahoria asada, alcachofa y guisantes.</dd><dd class="dish-price">19 €</dd></div>
+        <div data-kind="platos"><dt>Arroz meloso de setas</dt><dd class="dish-note">Setas de temporada y jugo de cebolla asada.</dd><dd class="dish-price">22 €</dd></div>
+        <div data-kind="postres"><dt>Tarta tibia de nísperos</dt><dd class="dish-note">Crema de vainilla y masa de almendra.</dd><dd class="dish-price">8 €</dd></div>
+      </dl>
+    </section>
+
+    <section class="band venue-band" id="comedor" aria-labelledby="comedor-title">
+      <div class="shell venue-grid venue-grid--reverse">
+        <figure><img src="../assets/proyectos/comedor.jpg" width="1536" height="1024" alt="Mesas de lino junto a una ventana soleada en el comedor conceptual" loading="lazy"></figure>
+        <div><p class="kicker">El comedor</p><h2 id="comedor-title">Un sitio<br>en Chamberí.</h2><p>Madera, lino y luz que cambia a lo largo del día. Un comedor de barrio para comer a gusto y quedarse un rato más.</p></div>
+      </div>
+    </section>
+
+    <section class="content shell split reservation-band" id="reserva" aria-labelledby="reserva-title">
+      <div><p class="kicker">Reserva de demostración</p><h2 id="reserva-title">Mesa para…</h2><p>Prueba cómo sería elegir una mesa para comer o cenar.</p></div>
+      <form class="booking" data-demo-booking="Reserva de demostración">
+        <label>Personas <select name="personas" required><option value="">Selecciona cuántas</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>6 personas</option></select></label>
+        <label>Turno <select name="turno" required><option value="">Selecciona un turno</option><option>Comida · 13:30</option><option>Comida · 15:00</option><option>Cena · 20:30</option><option>Cena · 22:00</option></select></label>
+        <button class="button primary" type="submit">Simular reserva</button>
+        <output aria-live="polite"></output>
+      </form>
+    </section>
+  </main>
+  <footer class="demo-footer"><div class="shell"><span>La Mesa del Níspero · Concepto ficticio en Madrid</span><a href="../index.html#work">Volver al Portfolio</a></div></footer>
+</body>
+</html>

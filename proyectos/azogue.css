@@ -1,0 +1,99 @@
+.azogue { --night: #230e12; --copper: #efae7a; --wine: #391818; --display: Georgia, "Times New Roman", serif; }
+
+.azogue .azogue-splash { grid-template-rows: auto 1fr auto; min-height: min(890px, 94svh); background: var(--night); }
+.azogue .azogue-splash::after {
+  background: linear-gradient(180deg, transparent 55%, #230e126e 84%, var(--night) 100%),
+    linear-gradient(90deg, #1d080ced, #230d139e 39%, transparent 76%),
+    linear-gradient(180deg, #16090bbe, transparent 135px);
+}
+.azogue .azogue-splash::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.azogue .azogue-splash .brand { display: inline-flex; gap: 11px; align-items: center; }
+.azogue-symbol { display: inline-grid; place-items: center; flex: 0 0 auto; width: 31px; height: 31px; border: 1px solid #eeb381ab; border-radius: 50%; }
+.azogue-symbol::after { content: ""; width: 10px; height: 14px; border: 1px solid var(--copper); border-radius: 50%; transform: rotate(26deg); }
+.azogue-kicker { display: flex; align-items: center; gap: 12px; color: #efba92; }
+.azogue-kicker::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+.azogue .azogue-splash .hero-copy h1 { font-size: clamp(84px, 10.1vw, 155px); }
+.azogue .hero-copy { padding-block: clamp(45px, 5.8vw, 82px) clamp(40px, 6vw, 75px); }
+
+.azogue-film { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 450ms ease; }
+.azogue-film.is-ready { opacity: 1; }
+.azogue-controls { display: flex; justify-content: flex-end; min-height: 39px; padding-bottom: 18px; }
+.film-control { min-height: 37px; border: 1px solid #e9b78a67; border-radius: 32px; padding: 7px 13px; background: #230e12c9; color: #fff1dd; font-size: 13px; }
+.film-control:hover { border-color: var(--copper); }
+
+.azogue-carta { padding-block: clamp(38px, 7vw, 108px) clamp(64px, 8vw, 120px); background: radial-gradient(ellipse at 78% 35%, #4b211c90, transparent 63%), var(--night); }
+.azogue-section-heading { display: grid; grid-template-columns: 1.25fr .75fr; align-items: end; gap: 26px; margin-bottom: clamp(28px, 4vw, 56px); }
+.azogue-section-heading h2, .azogue-room h2, .azogue-reservation h2 { margin-top: 12px; font: 400 clamp(56px, 8.2vw, 120px)/.85 var(--display); letter-spacing: -.083em; }
+.azogue-section-heading h2 em, .azogue-room h2 em, .azogue-reservation h2 em { color: var(--copper); font-weight: 400; }
+.azogue-section-heading > p, .azogue-room-copy > p:not(.kicker) { max-width: 395px; color: #e5c9b3; font-size: 17px; line-height: 1.56; }
+
+.azogue-tasting { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr); gap: clamp(28px, 5.5vw, 88px); align-items: start; }
+.drink-portrait { margin: 0; min-width: 0; }
+.drink-photos { position: relative; isolation: isolate; aspect-ratio: 1.03; overflow: hidden; border-radius: 48% 48% 8px 8px / 15% 15% 8px 8px; background: #2d1212; }
+.drink-photos::after { position: absolute; z-index: 2; inset: 0; content: ""; border: 1px solid #cea17c60; border-radius: inherit; box-shadow: inset 0 0 36px #19080b55; pointer-events: none; }
+.drink-photo { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 54%; opacity: 0; transform: scale(1.04); transition: opacity 420ms ease, transform 660ms cubic-bezier(.2,.73,.22,1); }
+.drink-photo[data-drink-photo="cobre"] { object-position: 73% 54%; }
+.drink-photo.is-active { opacity: 1; transform: scale(1); }
+.drink-portrait figcaption { display: flex; align-items: center; justify-content: space-between; gap: 13px; min-height: 48px; padding-block: 12px; border-bottom: 1px solid #8454438c; color: #f1d1b4; font-size: 15px; font-weight: 700; }
+.drink-portrait figcaption span:last-child { color: #d6a78a; font-weight: 450; }
+
+.azogue-selection .filter-bar { margin-top: 0; }
+.azogue-selection .filter-bar button { border-radius: 30px; }
+.azogue-selection .filter-bar button[aria-pressed="true"] { background: var(--copper); border-color: var(--copper); color: #371614; }
+.drink-list { list-style: none; padding: 0; margin: 0; }
+.drink-list li { border-top: 1px solid #8454438c; }
+.drink-list li:last-child { border-bottom: 1px solid #8454438c; }
+.drink-list button { display: grid; width: 100%; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 15px; align-items: center; border: 0; padding: clamp(16px, 2vw, 23px) 12px; background: transparent; text-align: left; transition: background-color 200ms ease; }
+.drink-list button:hover { background: #f6bf8920; }
+.drink-list button[aria-pressed="true"] { background: #f6bf891c; box-shadow: inset 2px 0 var(--copper); }
+.drink-name { font: 400 clamp(28px, 3.4vw, 49px)/.91 var(--display); letter-spacing: -.055em; }
+.drink-list button[aria-pressed="true"] .drink-name { color: var(--copper); }
+.drink-price { color: #efd1b5; font-size: 16px; white-space: nowrap; font-weight: 720; }
+.drink-note { grid-column: 1 / -1; color: #e1c2aa; font-size: 15px; line-height: 1.48; }
+
+.azogue-room { padding-block: clamp(16px, 3.7vw, 54px) clamp(50px, 7vw, 104px); background: #230e12; }
+.azogue-room-inner { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(550px, 63vw, 760px); overflow: hidden; border-radius: 21px; background: #2c1214; }
+.azogue-room-inner figure { position: absolute; z-index: -2; inset: 0; margin: 0; overflow: hidden; }
+.azogue-room-inner img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.azogue-room-inner::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(0deg, #190a0bf2, #190a0ba0 32%, transparent 73%), linear-gradient(90deg, #190a0b80, transparent 68%); }
+.azogue-room-copy { padding: clamp(30px, 6.3vw, 87px); }
+.azogue-room-copy > p:not(.kicker) { margin-top: 18px; }
+.azogue-room-copy .button { margin-top: 20px; }
+.azogue-reservation { background: radial-gradient(ellipse at 4% 15%, #52241b, #361b1a 70%); }
+.azogue-reservation h2 { font-size: clamp(54px, 7.1vw, 104px); }
+.azogue .demo-footer { background: #230e12; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-on .azogue .azogue-splash::before { background: linear-gradient(108deg, #210d11, #5a291f 52%, #1e0c10 80%); animation: azogue-curtain 1350ms cubic-bezier(.56,.02,.19,1) both; }
+  .intro-on .azogue .azogue-splash .title-line > span { animation-duration: 1020ms; animation-delay: 130ms; }
+  .intro-on .azogue .azogue-splash .title-line:nth-child(2) > span { animation-delay: 280ms; }
+  .intro-on .azogue .azogue-splash .lede { animation-delay: 450ms; }
+  .intro-on .azogue .azogue-splash .actions { animation-delay: 570ms; }
+  .azogue-room img.is-in-view { animation: venue-reveal 940ms cubic-bezier(.2,.75,.22,1) both; }
+  @keyframes azogue-curtain {
+    from { clip-path: inset(0); opacity: .94; }
+    to { clip-path: inset(0 0 0 100%); opacity: .1; }
+  }
+}
+
+@media (max-width: 700px) {
+  .azogue .azogue-splash { min-height: clamp(640px, 92svh, 770px); }
+  .azogue .azogue-splash .hero-copy { padding-top: clamp(42px, 12vw, 78px); }
+  .azogue .azogue-splash .hero-copy h1 { font-size: clamp(55px, 14.4vw, 90px); }
+  .azogue .azogue-splash::after { background: linear-gradient(0deg, var(--night), transparent 28%), linear-gradient(180deg, #260e12 6%, #260e12eb 24%, #260e12a5 54%, #260e123b 77%); }
+  .azogue .azogue-film { inset: auto 0 0; height: 82%; object-position: 72% center; }
+  .azogue-symbol { width: 25px; height: 25px; }
+  .azogue-symbol::after { width: 8px; height: 11px; }
+  .azogue-section-heading, .azogue-tasting { grid-template-columns: 1fr; gap: 23px; }
+  .drink-photos { max-height: 465px; }
+  .azogue-room-inner { min-height: 470px; }
+}
+@media (max-width: 365px) {
+  .azogue .azogue-splash .brand { gap: 7px; }
+  .azogue .azogue-splash .hero-copy h1 { font-size: 48px; }
+  .azogue-kicker { gap: 8px; }
+  .azogue-kicker::before { width: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .azogue-film, .drink-photo, .drink-list button { transition: none; }
+}

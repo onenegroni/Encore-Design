@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e0d10">
+  <meta name="description" content="Club Azogue, un concepto de coctelería de autor en Madrid diseñado por Encore Design.">
+  <title>Club Azogue | Concepto de Encore Design</title>
+  <link rel="stylesheet" href="intro-motion.css">
+  <link rel="stylesheet" href="conceptos.css">
+  <link rel="stylesheet" href="hospitalidad.css">
+  <link rel="stylesheet" href="azogue.css">
+  <script src="conceptos.js" defer></script>
+  <script src="azogue.js" defer></script>
+</head>
+<body class="azogue hospitality">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span>Concepto de Encore Design</span><a href="../index.html#work">Volver al Portfolio</a></div>
+  <main id="contenido">
+    <section class="splash azogue-splash" aria-labelledby="hero-title">
+      <img class="hero-image" src="../assets/proyectos/azogue.jpg" width="1672" height="941" alt="" fetchpriority="high">
+      <video class="azogue-film" data-azogue-film data-src="../assets/proyectos/azogue-ambiente.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+      <header class="site-nav shell">
+        <a class="brand" href="#contenido"><span class="azogue-symbol" aria-hidden="true"></span>Club Azogue</a>
+        <nav aria-label="Navegación principal"><a href="#carta">Cócteles</a><a href="#sala">El club</a><a class="nav-reserve" href="#reserva">Reservas</a></nav>
+      </header>
+      <div class="hero-copy shell">
+        <p class="kicker azogue-kicker">Coctelería de autor · Madrid</p>
+        <h1 id="hero-title"><span class="title-line"><span>La noche</span></span> <span class="title-line"><span>empieza aquí.</span></span></h1>
+        <p class="lede">Cócteles de autor, luz de cobre y noches que se alargan en el Barrio de las Letras.</p>
+        <div class="actions"><a class="button primary" href="#carta">Explorar la carta</a><a class="button secondary" href="#reserva">Reservar mesa</a></div>
+      </div>
+      <div class="azogue-controls shell"><button type="button" class="film-control" data-film-control hidden>Pausar ambiente</button></div>
+    </section>
+
+    <section class="azogue-carta" id="carta" aria-labelledby="carta-title" data-azogue-menu>
+      <div class="shell">
+        <div class="azogue-section-heading">
+          <div><p class="kicker azogue-kicker">Carta de muestra</p><h2 id="carta-title">En la <em>copa.</em></h2></div>
+          <p>Del amontillado y la naranja al té negro con pomelo. Elige una copa para verla de cerca.</p>
+        </div>
+
+        <div class="azogue-tasting">
+          <figure class="drink-portrait">
+            <div class="drink-photos">
+              <img class="drink-photo is-active" data-drink-photo="cobre" src="../assets/proyectos/azogue.jpg" width="1672" height="941" alt="Copa de color ámbar con piel de naranja" loading="lazy">
+              <img class="drink-photo" data-drink-photo="veladura" src="../assets/proyectos/azogue-veladura.jpg" width="888" height="1110" alt="Copa de vermut rojo con una cereza oscura" loading="lazy" aria-hidden="true">
+              <img class="drink-photo" data-drink-photo="sombra" src="../assets/proyectos/azogue-sombra.jpg" width="888" height="1110" alt="Vaso alto con hielo y piel de pomelo" loading="lazy" aria-hidden="true">
+              <img class="drink-photo" data-drink-photo="luz" src="../assets/proyectos/azogue-luz.jpg" width="888" height="1110" alt="Vaso bajo de color dorado con piel de limón" loading="lazy" aria-hidden="true">
+            </div>
+            <figcaption aria-live="polite" aria-atomic="true"><span data-portrait-title>Cobre Viejo</span><span data-portrait-kind>De autor</span></figcaption>
+          </figure>
+
+          <div class="azogue-selection">
+            <div class="filter-bar" role="group" aria-label="Filtrar los cócteles">
+              <button type="button" data-azogue-filter="all" aria-pressed="true">Toda la carta</button>
+              <button type="button" data-azogue-filter="autor" aria-pressed="false">De autor</button>
+              <button type="button" data-azogue-filter="sin" aria-pressed="false">Sin alcohol</button>
+            </div>
+            <ul class="drink-list">
+              <li data-drink-kind="autor"><button type="button" data-drink="cobre" aria-pressed="true"><span class="drink-name">Cobre Viejo</span><span class="drink-price">14 €</span><span class="drink-note">Whisky de centeno, amontillado y naranja.</span></button></li>
+              <li data-drink-kind="autor"><button type="button" data-drink="veladura" aria-pressed="false"><span class="drink-name">Veladura</span><span class="drink-price">13 €</span><span class="drink-note">Vermut rojo, ginebra y cereza oscura.</span></button></li>
+              <li data-drink-kind="sin"><button type="button" data-drink="sombra" aria-pressed="false"><span class="drink-name">Sombra Clara</span><span class="drink-price">9 €</span><span class="drink-note">Té negro frío, pomelo y soda.</span></button></li>
+              <li data-drink-kind="sin"><button type="button" data-drink="luz" aria-pressed="false"><span class="drink-name">Última Luz</span><span class="drink-price">9 €</span><span class="drink-note">Membrillo, limón y jengibre.</span></button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="azogue-room" id="sala" aria-labelledby="sala-title">
+      <div class="shell azogue-room-inner">
+        <figure><img data-venue-photo src="../assets/proyectos/sala.jpg" width="1536" height="1024" alt="Barra de cobre, taburetes de cuero y lámparas rojas en la sala conceptual de Club Azogue" loading="lazy"></figure>
+        <div class="azogue-room-copy">
+          <p class="kicker azogue-kicker">El club · Barrio de las Letras</p>
+          <h2 id="sala-title">Luz baja.<br><em>Copas largas.</em></h2>
+          <p>Cobre, cuero y espejos ahumados. Una barra pequeña para empezar con un aperitivo o pedir la última copa.</p>
+          <a href="#reserva" class="button secondary">Ver reservas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band reservation-band azogue-reservation" id="reserva" aria-labelledby="reserva-title">
+      <div class="shell split">
+        <div><p class="kicker azogue-kicker">Reserva de demostración</p><h2 id="reserva-title">Tu mesa,<br><em>al caer la noche.</em></h2><p>Elige el tamaño de tu grupo y una hora de ejemplo.</p></div>
+        <form class="booking" data-demo-booking="Reserva de demostración">
+          <label>Personas <select name="personas" required><option value="">Selecciona cuántas</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>6 personas</option></select></label>
+          <label>Hora <select name="hora" required><option value="">Selecciona una hora</option><option>19:30</option><option>21:00</option><option>22:30</option><option>00:00</option></select></label>
+          <button class="button primary" type="submit">Simular reserva</button>
+          <output aria-live="polite"></output>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer"><div class="shell"><span>Club Azogue · Concepto ficticio en Madrid</span><a href="../index.html#work">Volver al Portfolio</a></div></footer>
+</body>
+</html>

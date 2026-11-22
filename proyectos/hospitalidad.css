@@ -1,0 +1,44 @@
+.azogue { --base: #261315; --ink: #fff0db; --mute: #ddc3b2; --hero: #260e12; --hero-ink: #fff0db; --accent: #efae7a; --accent-ink: #371614; --band: #361b1a; --line: #65403b; --focus: #ffc591; }
+.nispero { --base: #fff4e1; --ink: #412b1d; --mute: #5f4532; --hero: #533b26; --hero-ink: #fff6e4; --accent: #ffe1a8; --accent-ink: #432c18; --band: #edd6b3; --line: #bca284; --focus: #a45127; }
+
+.hospitality .site-nav nav { flex-shrink: 0; }
+.hospitality .site-nav .brand { font: 400 clamp(22px, 3vw, 38px)/1 Georgia, serif; letter-spacing: -.06em; }
+.azogue .site-nav .brand { letter-spacing: .04em; font-variant: small-caps; }
+.hospitality .nav-reserve { border: 1px solid #fff0dc92; border-radius: 40px; padding: 9px 14px; }
+.hospitality .splash::after { background: linear-gradient(90deg, #1d0b0ce0, #210e0ea6 38%, transparent 74%), linear-gradient(180deg, #190b0cbc, transparent 165px); }
+.nispero .splash::after { background: linear-gradient(90deg, #382716d9, #3827169c 38%, transparent 74%), linear-gradient(180deg, #382716ce, transparent 148px); }
+.hospitality .splash .kicker { color: #f5c69a; }
+.nispero .splash .kicker { color: #ffe6b6; }
+.hospitality .hero-copy h1 { font: 400 clamp(77px, 9.8vw, 149px)/.80 Georgia, serif; letter-spacing: -.088em; }
+.hospitality .title-line:last-child { color: var(--accent); font-style: italic; }
+.hospitality h2 { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.066em; }
+.hospitality .button { border-radius: 40px; }
+.hospitality-menu .section-head h2 { font-size: clamp(49px, 7.5vw, 100px); line-height: .9; }
+.hospitality-list { max-width: 840px; }
+.hospitality-list > div { display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 7px 15px; border-top: 1px solid var(--line); padding-block: 18px; }
+.hospitality-list dt { font: 400 clamp(23px, 3vw, 36px)/1 Georgia, serif; letter-spacing: -.045em; }
+.hospitality-list .dish-price { grid-area: 1 / 2; font-weight: 700; white-space: nowrap; }
+.hospitality-list .dish-note { grid-column: 1; color: var(--mute); line-height: 1.45; }
+.hospitality .booking select { border-color: var(--line); background: linear-gradient(45deg, transparent 50%, var(--ink) 50%) right 17px center / 6px 6px no-repeat, linear-gradient(135deg, var(--ink) 50%, transparent 50%) right 11px center / 6px 6px no-repeat, var(--base); }
+.hospitality .booking .button { margin-top: 0; }
+.nispero .reservation-band .primary { --accent: #613a23; --accent-ink: #fff6e4; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-on .azogue .hero-image { animation: quiet-entrance 1550ms ease-out both; }
+  .intro-on .nispero .hero-image { animation: zoom-entrance 1200ms ease-out both; }
+}
+@media (max-width: 700px) {
+  .hospitality .site-nav .brand { font-size: 24px; }
+  .hospitality .site-nav nav { gap: 10px; }
+  .hospitality .site-nav nav a:nth-child(2) { display: none; }
+  .hospitality .nav-reserve { padding: 8px 10px; }
+  .hospitality .hero-copy h1 { font-size: clamp(55px, 13.4vw, 92px); }
+  .hospitality .splash::after { background: linear-gradient(180deg, #260e12 4%, #260e12e8 24%, #260e12a5 53%, #260e123c 77%); }
+  .nispero .splash::after { background: linear-gradient(180deg, #362718 4%, #362718e8 24%, #362718aa 54%, #3627181a 82%); }
+  .hospitality .hero-image { object-position: 72% center; }
+}
+@media (max-width: 365px) {
+  .hospitality .site-nav .brand { font-size: 19px; }
+  .hospitality .site-nav nav { gap: 7px; }
+  .hospitality .hero-copy h1 { font-size: 49px; }
+}

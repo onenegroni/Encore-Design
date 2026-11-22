@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f8eee6">
+  <meta name="description" content="Concepto de clínica estética con consulta y tratamientos faciales.">
+  <title>Claro Estética | Concepto de Encore Design</title>
+  <link rel="stylesheet" href="intro-motion.css">
+  <link rel="stylesheet" href="conceptos.css">
+  <script src="conceptos.js" defer></script>
+</head>
+<body class="claro">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span>Concepto de Encore Design</span><a href="../index.html#work">Volver al Portfolio</a></div>
+  <main id="contenido">
+    <section class="splash" aria-labelledby="hero-title">
+      <img class="hero-image" src="../assets/proyectos/claro.jpg" width="1672" height="941" alt="" fetchpriority="high">
+      <header class="site-nav shell">
+        <a class="brand" href="#contenido">Claro Estética<span aria-hidden="true">.</span></a>
+        <nav aria-label="Navegación principal"><a href="#tratamientos">Tratamientos</a><a href="#cita">Citas</a></nav>
+      </header>
+      <div class="hero-copy shell">
+        <p class="kicker">Clínica de estética facial</p>
+        <h1 id="hero-title"><span class="title-line"><span>Cuidar tu piel</span></span> <span class="title-line"><span>empieza aquí.</span></span></h1>
+        <p class="lede">Una consulta tranquila para entender qué buscas y explorar tus opciones de cuidado facial.</p>
+        <div class="actions"><a class="button primary" href="#cita">Ver citas</a><a class="button secondary" href="#tratamientos">Tratamientos</a></div>
+      </div>
+    </section>
+
+    <section class="content shell" id="tratamientos" aria-labelledby="tratamientos-title">
+      <div class="section-head"><p class="kicker">Carta de servicios de muestra</p><h2 id="tratamientos-title">Tu primera visita.</h2><p>Descubre cómo se presentarían la consulta y los cuidados faciales en una web de clínica.</p></div>
+      <div class="treatment-grid">
+        <article><h3>Consulta estética</h3><p>Una conversación sobre tus hábitos, tus prioridades y los cuidados que ya utilizas.</p></article>
+        <article><h3>Cuidado facial</h3><p>Un espacio para plantear un cuidado acorde con tus preferencias y tu rutina.</p></article>
+        <article><h3>Revisión de rutina</h3><p>Una cita para repasar lo que ya usas, resolver dudas y preparar los siguientes pasos.</p></article>
+      </div>
+    </section>
+    <section class="band" id="estudio" aria-labelledby="estudio-title">
+      <div class="shell venue-grid venue-grid--reverse">
+        <figure><img src="../assets/proyectos/claro-estudio.jpg" width="1240" height="826" alt="Una camilla vestida de lino junto a una ventana con luz cálida" loading="lazy"></figure>
+        <div>
+          <p class="kicker">El estudio</p>
+          <h2 id="estudio-title">Un rato para ti.</h2>
+          <p>Luz natural, lino y tonos suaves. Un espacio tranquilo para hablar de tu rutina y hacer preguntas.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content shell split" id="cita" aria-labelledby="cita-title">
+      <div><p class="kicker">Cita de demostración</p><h2 id="cita-title">Un espacio para ti.</h2><p>Prueba a elegir un servicio y una franja horaria.</p></div>
+      <form class="booking" data-demo-booking>
+        <label>Servicio <select name="servicio" required><option value="">Selecciona un servicio</option><option>Consulta estética</option><option>Cuidado facial</option><option>Revisión de rutina</option></select></label>
+        <label>Franja preferida <select name="franja" required><option value="">Selecciona una franja</option><option>Mañana</option><option>Tarde</option></select></label>
+        <button class="button primary" type="submit">Simular cita</button>
+        <output aria-live="polite"></output>
+      </form>
+    </section>
+  </main>
+  <footer class="demo-footer"><div class="shell"><span>Claro Estética · Concepto ficticio</span><a href="../index.html#work">Volver al Portfolio</a></div></footer>
+</body>
+</html>

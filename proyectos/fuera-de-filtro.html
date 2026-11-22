@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#101d82">
+  <meta name="description" content="Cafetería alternativa con carta de espresso, bebidas frías y bollería.">
+  <title>Fuera de Filtro | Concepto de Encore Design</title>
+  <link rel="stylesheet" href="intro-motion.css">
+  <link rel="stylesheet" href="conceptos.css">
+  <script src="conceptos.js" defer></script>
+</head>
+<body class="filtro">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span>Concepto de Encore Design</span><a href="../index.html#work">Volver al Portfolio</a></div>
+  <main id="contenido">
+    <section class="splash" aria-labelledby="hero-title">
+      <img class="hero-image" src="../assets/proyectos/filtro.jpg" width="1672" height="941" alt="" fetchpriority="high">
+      <header class="site-nav shell">
+        <a class="brand" href="#contenido">Fuera de Filtro<span aria-hidden="true">.</span></a>
+        <nav aria-label="Navegación principal"><a href="#carta">Carta</a><a href="#visita">Visita</a></nav>
+      </header>
+      <div class="hero-copy shell">
+        <p class="kicker">Barra de café de especialidad</p>
+        <h1 id="hero-title"><span class="title-line"><span>Café.</span></span> <span class="title-line"><span>Sin manual.</span></span></h1>
+        <p class="lede">Espresso, bebidas frías y algo dulce. Una barra para probar combinaciones fuera de lo habitual.</p>
+        <div class="actions"><a class="button primary" href="#carta">Ver la carta</a><a class="button secondary" href="#visita">La barra</a></div>
+      </div>
+    </section>
+
+    <section class="content shell" id="carta" aria-labelledby="carta-title" data-filter-widget>
+      <div class="section-head"><p class="kicker">Carta de ejemplo</p><h2 id="carta-title">Lo que sale<br>de la barra.</h2></div>
+      <div class="filter-bar" role="group" aria-label="Filtrar la carta"><button type="button" data-filter="all" aria-pressed="true">Todo</button><button type="button" data-filter="cafe" aria-pressed="false">Café</button><button type="button" data-filter="frio" aria-pressed="false">Frío</button><button type="button" data-filter="dulce" aria-pressed="false">Dulce</button></div>
+      <dl class="menu-list">
+        <div data-kind="cafe"><dt>Doble espresso</dt><dd>2,60 €</dd></div>
+        <div data-kind="cafe"><dt>Flat white de avena</dt><dd>3,70 €</dd></div>
+        <div data-kind="frio"><dt>Espresso tonic con pomelo</dt><dd>4,50 €</dd></div>
+        <div data-kind="frio"><dt>Cold brew con naranja</dt><dd>4,20 €</dd></div>
+        <div data-kind="dulce"><dt>Cookie de miso y chocolate</dt><dd>3,20 €</dd></div>
+        <div data-kind="dulce"><dt>Bizcocho de limón y sésamo</dt><dd>3,60 €</dd></div>
+      </dl>
+    </section>
+    <section class="band" id="visita" aria-labelledby="visita-title">
+      <div class="shell venue-grid">
+        <figure><img src="../assets/proyectos/filtro-barra.jpg" width="1240" height="826" alt="Barra de azulejos azules con una cafetera de acero iluminada por el sol" loading="lazy"></figure>
+        <div>
+          <p class="kicker">Horario de muestra</p>
+          <h2 id="visita-title">La barra.</h2>
+          <p>Azulejo azul, acero y sol de tarde. Pide un espresso o prueba la mezcla del día.</p>
+          <dl class="editorial-list"><div><dt>Martes a viernes</dt><dd>08:30–17:00</dd></div><div><dt>Sábado y domingo</dt><dd>09:00–16:00</dd></div></dl>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer"><div class="shell"><span>Fuera de Filtro · Concepto ficticio</span><a href="../index.html#work">Volver al Portfolio</a></div></footer>
+</body>
+</html>
