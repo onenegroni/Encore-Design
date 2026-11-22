@@ -16,29 +16,6 @@ if (contactLink?.dataset.whatsappMessage && studio.whatsapp) {
 }
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const heroMedia = document.querySelector('.hero-media');
-const desktop = window.matchMedia('(min-width: 741px)');
-
-if (heroMedia) {
-  let pendingFrame;
-
-  function updateHeroOffset() {
-    pendingFrame = undefined;
-    const enabled = desktop.matches && !reducedMotion.matches;
-    const offset = enabled ? Math.min(Math.max(0, window.scrollY) * 0.06, 20) : 0;
-    heroMedia.style.setProperty('--hero-offset', offset + 'px');
-  }
-
-  function queueHeroOffset() {
-    if (pendingFrame === undefined) pendingFrame = requestAnimationFrame(updateHeroOffset);
-  }
-
-  window.addEventListener('scroll', queueHeroOffset, { passive: true });
-  desktop.addEventListener('change', queueHeroOffset);
-  reducedMotion.addEventListener('change', queueHeroOffset);
-  updateHeroOffset();
-}
-
 const motionToggle = document.querySelector('[data-motion-toggle]');
 const films = document.querySelectorAll('[data-motion]');
 
