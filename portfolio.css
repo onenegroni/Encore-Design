@@ -28,8 +28,11 @@ img { display: block; max-width: 100%; }
 
 .launch { background: var(--dark); }
 .masthead { position: absolute; inset: 21px 0 auto; z-index: 2; display: flex; min-height: 62px; align-items: center; justify-content: space-between; gap: 18px; padding: 7px 8px 7px 17px; border: 1px solid #fff0e52e; border-radius: 40px; background: #190f0dc7; color: var(--cream); backdrop-filter: blur(18px); }
-.wordmark { display: inline-flex; align-items: center; gap: 9px; font-size: 20px; font-weight: 720; letter-spacing: -.048em; text-decoration: none; white-space: nowrap; }
-.mark { display: block; flex: 0 0 auto; width: 29px; aspect-ratio: 1; background: url("assets/encore-mark.png") center / contain no-repeat; }
+.wordmark { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 8px; color: var(--cream); text-decoration: none; white-space: nowrap; }
+.mark { display: block; flex: 0 0 auto; width: 39px; aspect-ratio: 1; background: url("assets/encore-ribbon.png") center / contain no-repeat; }
+.wordmark-type { display: grid; gap: 4px; }
+.wordmark-name { font: italic 400 29px/.82 Georgia, serif; letter-spacing: -.073em; }
+.wordmark-label { padding-inline-start: .2em; color: var(--copper); font-size: 9px; font-weight: 720; line-height: 1; letter-spacing: .27em; text-transform: uppercase; }
 .masthead-actions, .primary-nav { display: flex; align-items: center; gap: clamp(14px, 2.5vw, 34px); }
 .primary-nav a { display: inline-flex; min-height: 44px; align-items: center; font-size: 14px; font-weight: 650; text-decoration: none; }
 .masthead nav a:hover { color: #ff9a78; }
@@ -206,7 +209,9 @@ h2 { margin-top: 14px; font-size: clamp(45px, 7.3vw, 106px); font-weight: 760; l
 @media (max-width: 740px) {
   :root { --shell: calc(100% - 36px); }
   .masthead { top: 13px; min-height: 56px; gap: 10px; padding: 5px 5px 5px 11px; }
-  .wordmark { gap: 6px; font-size: 18px; }
+  .wordmark { gap: 5px; }
+  .mark { width: 33px; }
+  .wordmark-name { font-size: 24px; }
   .masthead-actions, .primary-nav { gap: 12px; }
   .masthead .nav-process { display: none; }
   .primary-nav a { font-size: 13px; }
@@ -256,10 +261,8 @@ h2 { margin-top: 14px; font-size: clamp(45px, 7.3vw, 106px); font-weight: 760; l
   .hero .eyebrow { font-size: 12px; letter-spacing: .09em; }
   .hero .button { min-height: 46px; padding-inline: 12px; font-size: 14px; }
   .masthead { gap: 9px; }
-  .masthead .wordmark { gap: 4px; font-size: 15px; }
   .masthead-actions { gap: 8px; }
   .primary-nav a { font-size: 12px; }
-  .masthead .mark { width: 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
