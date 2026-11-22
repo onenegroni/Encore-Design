@@ -8,8 +8,8 @@ for (const label of document.querySelectorAll('[data-studio]')) {
 }
 
 const contactLink = document.querySelector('#contact-link');
-if (contactLink && studio.whatsapp) {
-  const message = 'Hola, me gustaría hablar sobre una web para mi negocio.';
+if (contactLink?.dataset.whatsappMessage && studio.whatsapp) {
+  const message = contactLink.dataset.whatsappMessage;
   contactLink.href = 'https://wa.me/' + studio.whatsapp + '?text=' + encodeURIComponent(message);
   contactLink.hidden = false;
   document.querySelector('#contact-note').hidden = true;

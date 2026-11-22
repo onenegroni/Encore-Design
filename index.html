@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#100e0d">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:site_name" content="Encore Design">
   <meta property="og:title" content="Encore Design · Diseño web para negocios con carácter">
   <meta property="og:description" content="Diseño y desarrollo web a medida. Explora seis proyectos de Encore Design.">
@@ -15,6 +16,8 @@
   <meta property="og:image:alt" content="Cintas de metal y cobre sobre fondo oscuro">
   <meta name="twitter:card" content="summary_large_image">
   <title>Encore Design | Estudio de diseño web en Alicante</title>
+  <link rel="alternate" hreflang="es" href="https://encore-design.coyoti-trading.chatgpt.site/">
+  <link rel="alternate" hreflang="en" href="https://encore-design.coyoti-trading.chatgpt.site/en/">
   <link rel="icon" type="image/png" href="assets/encore-icon.png">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="proyectos/intro-motion.css">
@@ -25,12 +28,18 @@
   <a class="skip" href="#main">Saltar al contenido</a>
   <div class="launch" id="top">
     <header class="masthead shell">
-      <a class="wordmark" href="index.html"><span class="mark" aria-hidden="true"></span><span data-studio>Encore Design</span></a>
-      <nav aria-label="Navegación principal">
-        <a href="#work">Portfolio</a>
-        <a class="nav-process" href="#process">Proceso</a>
-        <a class="nav-cta" href="#contact">Hablemos</a>
-      </nav>
+      <a class="wordmark" href="./"><span class="mark" aria-hidden="true"></span><span data-studio>Encore Design</span></a>
+      <div class="masthead-actions">
+        <nav class="primary-nav" aria-label="Navegación principal">
+          <a href="#work">Portfolio</a>
+          <a class="nav-process" href="#process">Proceso</a>
+          <a class="nav-cta" href="#contact">Hablemos</a>
+        </nav>
+        <nav class="language-switch" aria-label="Idioma">
+          <span aria-current="page" aria-label="Español">ES</span>
+          <a href="en/" lang="en" hreflang="en" aria-label="English">EN</a>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
@@ -227,7 +236,7 @@
           </div>
           <div class="contact-action">
             <p>Cuéntame qué haces y qué te gustaría que tus clientes encontraran al buscarte.</p>
-            <a class="button button-accent" id="contact-link" hidden>Escríbeme por WhatsApp</a>
+            <a class="button button-accent" id="contact-link" data-whatsapp-message="Hola, me gustaría hablar sobre una web para mi negocio." hidden>Escríbeme por WhatsApp</a>
             <p id="contact-note" class="contact-note">Los datos de contacto estarán disponibles al publicar la web.</p>
           </div>
         </div>
@@ -237,8 +246,11 @@
 
   <footer class="site-footer">
     <div class="shell">
-      <a class="wordmark" href="index.html"><span class="mark" aria-hidden="true"></span><span data-studio>Encore Design</span></a>
-      <a class="top-link" href="#top">Volver arriba</a>
+      <a class="wordmark" href="./"><span class="mark" aria-hidden="true"></span><span data-studio>Encore Design</span></a>
+      <div class="footer-actions">
+        <a class="top-link" href="#top">Volver arriba</a>
+        <a class="footer-language" href="en/" lang="en" hreflang="en">English</a>
+      </div>
     </div>
   </footer>
 </body>
