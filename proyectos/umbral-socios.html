@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1d1816">
+  <meta name="description" content="Prueba el área de socios de Umbral y explora cómo funciona una reserva de clase.">
+  <title>Área de socios | Umbral</title>
+  <link rel="stylesheet" href="conceptos.css">
+  <link rel="stylesheet" href="umbral-socios.css">
+  <script src="umbral-socios.js" defer></script>
+</head>
+<body class="umbral member-page">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span>Concepto de Encore Design</span><a href="../index.html#work">Volver al Portfolio</a></div>
+  <header class="member-header">
+    <div class="site-nav shell">
+      <a class="brand" href="umbral.html">Umbral<span aria-hidden="true">.</span></a>
+      <nav aria-label="Navegación principal"><a href="umbral.html#clases">Horario del club</a></nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="member-entry" id="member-entry" aria-labelledby="entry-title">
+      <div class="shell">
+        <img class="member-image" src="../assets/proyectos/umbral-estudio.jpg" width="1240" height="826" alt="" fetchpriority="high">
+        <p class="kicker">Área de socios</p>
+        <h1 id="entry-title" tabindex="-1">Tu espacio.<br><em>Tu ritmo.</em></h1>
+        <p>Consulta tu plan, reserva una clase y organiza tu semana de entrenamiento.</p>
+        <button class="button primary" id="open-member" type="button" hidden>Entrar con cuenta de prueba</button>
+        <p class="member-demo-note" id="demo-note" hidden>Perfil ficticio. Puedes probarlo sin introducir datos personales.</p>
+        <noscript><p class="member-demo-note">Activa JavaScript para probar el área de socios.</p></noscript>
+      </div>
+    </section>
+
+    <section class="member-dashboard" id="member-dashboard" aria-labelledby="dashboard-title" hidden>
+      <div class="member-welcome">
+        <div class="shell">
+          <div>
+            <p class="kicker">Área de socios · Cuenta de prueba</p>
+            <h1 id="dashboard-title" tabindex="-1">Hola, Alex<span aria-hidden="true">.</span></h1>
+          </div>
+          <button class="button secondary" id="close-member" type="button">Cerrar sesión de prueba</button>
+        </div>
+      </div>
+
+      <div class="shell member-content">
+        <div class="member-summary">
+          <article class="member-card member-plan">
+            <h2>Mi plan</h2>
+            <p class="member-value">Fuerza 8</p>
+            <p class="member-detail">Membresía activa · 8 clases al mes</p>
+          </article>
+          <article class="member-card member-credits">
+            <h2>Clases disponibles</h2>
+            <p class="member-value" id="class-balance"></p>
+            <p class="member-detail">Saldo del mes de muestra</p>
+          </article>
+          <article class="member-card member-profile">
+            <h2>Mi perfil</h2>
+            <p class="member-value">Alex Martín</p>
+            <p class="member-detail">Socio de Umbral · Perfil ficticio</p>
+          </article>
+        </div>
+
+        <div class="member-grid">
+          <section class="member-card member-bookings" aria-labelledby="bookings-title">
+            <h2 id="bookings-title">Mis reservas</h2>
+            <p class="member-detail">Semana de muestra</p>
+            <ul id="booked-classes"></ul>
+            <p id="empty-bookings" hidden>Cuando reserves una clase, aparecerá aquí.</p>
+          </section>
+          <section class="member-card member-reserve" aria-labelledby="reserve-title">
+            <h2 id="reserve-title">Reserva una clase</h2>
+            <p class="member-detail">Cada reserva de prueba usa una clase de tu plan.</p>
+            <form id="class-booking">
+              <label for="class-slot">Sesión</label>
+              <select id="class-slot" name="session">
+                <optgroup label="Fuerza base">
+                  <option value="fuerza-lun" data-class="fuerza" label="Fuerza base · Lunes · 18:30">Lunes · 18:30</option>
+                  <option value="fuerza-mie" data-class="fuerza" label="Fuerza base · Miércoles · 18:30">Miércoles · 18:30</option>
+                </optgroup>
+                <optgroup label="Acondicionamiento">
+                  <option value="acondicionamiento-mar" data-class="acondicionamiento" label="Acondicionamiento · Martes · 19:00">Martes · 19:00</option>
+                  <option value="acondicionamiento-jue" data-class="acondicionamiento" label="Acondicionamiento · Jueves · 19:00">Jueves · 19:00</option>
+                </optgroup>
+                <optgroup label="Movilidad">
+                  <option value="movilidad-sab" data-class="movilidad" label="Movilidad · Sábado · 10:00">Sábado · 10:00</option>
+                </optgroup>
+              </select>
+              <button class="button primary" type="submit">Confirmar reserva</button>
+            </form>
+            <p class="member-detail member-availability" id="booking-availability" hidden>Has usado todas las clases disponibles en esta demo. Cancela una reserva para liberar una clase.</p>
+            <p class="member-feedback" id="booking-feedback" role="status"></p>
+          </section>
+        </div>
+        <p class="member-dashboard-note" id="dashboard-note"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="demo-footer"><div class="shell"><span>Umbral · Concepto ficticio</span><a href="umbral.html">Volver a la web de Umbral</a></div></footer>
+</body>
+</html>

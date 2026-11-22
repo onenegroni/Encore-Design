@@ -1,0 +1,64 @@
+.umbral .schedule article > div { min-width: 0; }
+.umbral .schedule a { display: inline-flex; align-items: center; min-height: 44px; color: #8b2d17; font-weight: 700; text-underline-offset: 4px; }
+.umbral .schedule a:hover { color: var(--ink); }
+
+.member-page { --member-paper: #fff9f2; }
+.member-header, .member-entry, .member-welcome { --focus: #ffa380; background: var(--hero); color: var(--hero-ink); }
+.member-entry { position: relative; isolation: isolate; display: grid; align-items: center; min-height: min(650px, 79svh); overflow: hidden; }
+.member-entry::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #1d1816 5%, #1d1816ef 33%, #1d181692 56%, #1d18160d 87%); }
+.member-image { position: absolute; z-index: -2; inset: 0 0 0 auto; width: 74%; height: 100%; object-fit: cover; object-position: 60% 55%; }
+.member-entry .shell { padding-block: clamp(52px, 10vw, 120px); }
+.member-entry .kicker, .member-welcome .kicker { color: #ffc0a6; }
+.member-entry h1, .member-welcome h1 { margin-block: 12px 18px; font-size: clamp(56px, 8vw, 116px); font-weight: 880; line-height: .88; letter-spacing: -.085em; }
+.member-entry h1 em, .member-welcome h1 span { color: var(--accent); }
+.member-entry h1 em { font-weight: inherit; }
+.member-entry h1 + p { max-width: 385px; font-size: clamp(17px, 2vw, 21px); line-height: 1.5; }
+.member-entry .button { margin-block: 24px 13px; }
+.member-demo-note, .member-dashboard-note { font-size: 14px; line-height: 1.5; }
+.member-demo-note { max-width: 340px; color: #ead5c8; }
+
+.member-welcome { background: linear-gradient(90deg, #1d1816 10%, #1d1816e8 43%, #1d18167d 100%), url("../assets/proyectos/umbral-estudio.jpg") center 55% / cover; }
+.member-welcome .shell { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 30px; padding-block: clamp(36px, 6vw, 74px); }
+.member-welcome h1 { margin-bottom: 0; font-size: clamp(54px, 7vw, 90px); }
+.member-welcome .button { background: #201917cc; }
+.member-welcome .button:hover { background: #46312a; }
+.member-content { max-width: 1120px; padding-block: clamp(28px, 4.5vw, 62px); }
+.member-summary, .member-grid { display: grid; gap: clamp(12px, 2vw, 22px); }
+.member-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.member-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); margin-top: clamp(12px, 2vw, 22px); }
+.member-card { min-width: 0; padding: clamp(18px, 2.75vw, 34px); border: 1px solid #e4cebf; border-radius: 14px; background: var(--member-paper); }
+.member-plan { border-color: #ffb89d; background: #ffdccb; }
+.member-summary h2 { font-size: 14px; letter-spacing: .075em; text-transform: uppercase; }
+.member-value { margin-block: 9px 6px; font-size: clamp(27px, 4.25vw, 52px); font-weight: 830; line-height: .97; letter-spacing: -.07em; }
+.member-grid h2 { margin-bottom: 6px; font-size: clamp(24px, 3.05vw, 38px); letter-spacing: -.062em; line-height: 1; }
+.member-detail, .member-dashboard-note, #empty-bookings { color: var(--mute); font-size: 15px; line-height: 1.5; }
+.member-dashboard-note { margin-top: 20px; font-size: 14px; }
+.member-bookings ul { margin: 16px 0 0; padding: 0; list-style: none; }
+.member-bookings li { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0 14px; padding-block: 10px; border-top: 1px solid #e4cebf; }
+.member-bookings li strong, .member-bookings li span { display: block; }
+.member-bookings li span { margin-top: 3px; color: var(--mute); font-size: 14px; }
+.member-bookings li button { min-height: 44px; padding: 0 4px; border: 0; background: none; color: #7c2d1a; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+#empty-bookings { margin-top: 18px; }
+#class-booking { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-top: 18px; }
+#class-booking label { font-size: 15px; font-weight: 700; }
+#class-booking select { appearance: none; width: 100%; min-height: 46px; padding: 8px 34px 8px 12px; border: 1px solid #b99c8c; border-radius: var(--radius); background: linear-gradient(45deg, transparent 50%, var(--mute) 50%) right 17px center / 6px 6px no-repeat, linear-gradient(135deg, var(--mute) 50%, transparent 50%) right 11px center / 6px 6px no-repeat, var(--member-paper); }
+#class-booking .button { margin-top: 5px; }
+#class-booking .button:disabled { opacity: .55; cursor: default; filter: none; }
+.member-availability { margin-top: 12px; }
+.member-feedback:not(:empty) { margin-top: 12px; padding: 9px 11px; border-left: 3px solid var(--accent); background: var(--base); font-size: 15px; line-height: 1.45; }
+
+@media (max-width: 660px) {
+  .umbral .schedule article > div { grid-column: 2; }
+  .umbral .schedule h3 { overflow-wrap: anywhere; }
+  .member-entry { min-height: max(545px, 72svh); align-items: start; }
+  .member-entry::after { background: linear-gradient(180deg, #1d1816 3%, #1d1816eb 28%, #1d181697 58%, #1d181632 100%); }
+  .member-image { inset: auto 0 0; width: 100%; height: 86%; }
+  .member-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .member-profile, .member-reserve, .member-bookings { grid-column: 1 / -1; }
+  .member-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 360px) {
+  .umbral .site-nav nav { flex-wrap: wrap; justify-content: end; gap: 5px 9px; padding-block: 6px; }
+  .member-card { padding-inline: 14px; }
+}
