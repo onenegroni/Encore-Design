@@ -35,9 +35,12 @@
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"><img src="assets/acera-hero.jpg" width="1672" height="941" alt="" fetchpriority="high"></div>
+        <picture class="hero-media" aria-hidden="true">
+          <source media="(max-width: 740px)" srcset="assets/encore-hero-movil.jpg" width="880" height="1100">
+          <img src="assets/acera-hero.jpg" width="1672" height="941" alt="" fetchpriority="high">
+        </picture>
         <div class="hero-copy shell">
-          <p class="eyebrow">Estudio independiente · Alicante</p>
+          <p class="eyebrow"><span class="location-mark" aria-hidden="true"></span> Estudio independiente · Alicante</p>
           <h1 id="hero-title"><span>Diseño web</span> <span>para negocios</span> <span class="hero-emphasis">con carácter.</span></h1>
           <p class="lede">Creo webs a medida para que tus clientes descubran lo que ofreces y puedan reservar, pedir cita o escribirte.</p>
           <div class="hero-actions">
@@ -51,10 +54,10 @@
         <div class="shell work">
           <div class="section-intro">
             <div>
-              <p class="eyebrow">Últimos seis proyectos</p>
+              <p class="eyebrow">Selección de proyectos</p>
               <h2 id="work-title">Portfolio<span aria-hidden="true">.</span></h2>
             </div>
-            <p>Abre cada web para explorarla. Puedes volver a ver su entrada desde el portfolio.</p>
+            <p>Explora seis webs y vuelve a ver sus animaciones de entrada.</p>
           </div>
           <div class="work-grid">
             <article class="project project-azogue">
@@ -84,7 +87,7 @@
             <article class="project project-nispero">
               <a class="project-stage stage-nispero" href="proyectos/mesa-del-nispero.html" aria-label="Abrir La Mesa del Níspero" data-preview>
                 <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/nispero.jpg" alt="">
+                  <img class="mini-art" src="assets/proyectos/nispero.jpg" alt="" loading="lazy">
                   <div class="mini-bar"><span class="mini-brand">La Mesa del Níspero</span><span class="mini-nav"><span>Carta</span><span>Reservas</span></span></div>
                   <div class="mini-copy">
                     <span class="mini-kicker">Cocina de temporada · Madrid</span>
@@ -107,7 +110,7 @@
             <article class="project project-impronta">
               <a class="project-stage stage-impronta" href="https://improntaestampa.pages.dev/" aria-label="Abrir Impronta Estampa" data-preview>
                 <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/impronta-prendas.webp" alt="">
+                  <img class="mini-art" src="assets/impronta-prendas.webp" alt="" loading="lazy">
                   <div class="mini-bar"><span class="mini-brand">Impronta Estampa</span><span class="mini-nav"><span>Diseñador 3D</span><span>Productos</span></span></div>
                   <div class="mini-copy">
                     <span class="mini-kicker">Sublimación full color · San Juan</span>
@@ -130,7 +133,7 @@
             <article class="project project-umbral">
               <a class="project-stage stage-umbral" href="proyectos/umbral.html" aria-label="Abrir Umbral" data-preview>
                 <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/umbral-entrenamiento.jpg" alt="">
+                  <img class="mini-art" src="assets/proyectos/umbral-entrenamiento.jpg" alt="" loading="lazy">
                   <div class="mini-bar"><span class="mini-brand">Umbral</span><span class="mini-nav"><span>Clases</span><span>Área de socios</span></span></div>
                   <div class="mini-copy">
                     <span class="mini-kicker">Club de fuerza y acondicionamiento</span>
@@ -154,7 +157,7 @@
             <article class="project project-claro">
               <a class="project-stage stage-claro" href="proyectos/claro.html" aria-label="Abrir Claro Estética" data-preview>
                 <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/claro.jpg" alt="">
+                  <img class="mini-art" src="assets/proyectos/claro.jpg" alt="" loading="lazy">
                   <div class="mini-bar"><span class="mini-brand">Claro Estética</span><span class="mini-nav"><span>Tratamientos</span><span>Citas</span></span></div>
                   <div class="mini-copy">
                     <span class="mini-kicker">Clínica de estética facial</span>
@@ -177,7 +180,7 @@
             <article class="project project-filtro">
               <a class="project-stage stage-filtro" href="proyectos/fuera-de-filtro.html" aria-label="Abrir Fuera de Filtro" data-preview>
                 <div class="mini-page" aria-hidden="true">
-                  <img class="mini-art" src="assets/proyectos/filtro.jpg" alt="">
+                  <img class="mini-art" src="assets/proyectos/filtro.jpg" alt="" loading="lazy">
                   <div class="mini-bar"><span class="mini-brand">Fuera de Filtro</span><span class="mini-nav"><span>Carta</span><span>Visita</span></span></div>
                   <div class="mini-copy">
                     <span class="mini-kicker">Barra de café de especialidad</span>
@@ -205,14 +208,14 @@
         <div class="shell process-layout">
           <div>
             <p class="eyebrow">Proceso</p>
-            <h2 id="process-title">Primero, lo ves.</h2>
+            <h2 id="process-title">Primero,<br><em>lo ves.</em></h2>
             <p class="process-lede">Abre una primera propuesta en tu propio móvil y decide con algo concreto delante.</p>
           </div>
-          <div class="process-list">
-            <article><h3>Una demo para tu negocio</h3><p>Planteo una web alrededor de lo que más necesitan tus clientes, como ver la carta, pedir cita o llegar hasta ti.</p></article>
-            <article><h3>Tu contenido, tu estilo</h3><p>Ajustamos el diseño con tus fotos, tu oferta y la forma de contacto que prefieras.</p></article>
-            <article><h3>A punto para abrir</h3><p>Revisas el resultado y, con tu visto bueno, conectamos el dominio y publicamos.</p></article>
-          </div>
+          <ol class="process-list" role="list">
+            <li><span class="process-step" aria-hidden="true">01</span><h3>Una demo para tu negocio</h3><p>Planteo una web alrededor de lo que más necesitan tus clientes, como ver la carta, pedir cita o llegar hasta ti.</p></li>
+            <li><span class="process-step" aria-hidden="true">02</span><h3>Tu contenido, tu estilo</h3><p>Ajustamos el diseño con tus fotos, tu oferta y la forma de contacto que prefieras.</p></li>
+            <li><span class="process-step" aria-hidden="true">03</span><h3>A punto para abrir</h3><p>Revisas el resultado y, con tu visto bueno, conectamos el dominio y publicamos.</p></li>
+          </ol>
         </div>
       </section>
 
@@ -220,7 +223,7 @@
         <div class="shell contact-layout">
           <div>
             <p class="eyebrow"><span class="location-mark" aria-hidden="true"></span> Alicante</p>
-            <h2 id="contact-title">Tu negocio.<br>Tu próxima web.</h2>
+            <h2 id="contact-title">Tu negocio.<br><em>Tu próxima web.</em></h2>
           </div>
           <div class="contact-action">
             <p>Cuéntame qué haces y qué te gustaría que tus clientes encontraran al buscarte.</p>
