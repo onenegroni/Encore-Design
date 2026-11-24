@@ -16,6 +16,37 @@ if (contactLink?.dataset.whatsappMessage && studio.whatsapp) {
 }
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const heroMedia = document.querySelector('.hero-media');
+
+if (heroMedia) {
+  const hero = heroMedia.closest('.hero');
+  let glowFrame = null;
+  let glowProgress = -1;
+
+  function updateGlow() {
+    glowFrame = null;
+    const { top, height } = hero.getBoundingClientRect();
+    const travel = Math.min(height, window.innerHeight) * 0.58;
+    if (travel <= 0) return;
+
+    const progress = Math.min(1, Math.max(0, -top / travel));
+    if (progress === glowProgress) return;
+
+    glowProgress = progress;
+    heroMedia.style.setProperty('--glow-progress', String(progress));
+  }
+
+  function scheduleGlowUpdate() {
+    if (reducedMotion.matches || glowFrame !== null) return;
+    glowFrame = requestAnimationFrame(updateGlow);
+  }
+
+  window.addEventListener('scroll', scheduleGlowUpdate, { passive: true });
+  window.addEventListener('resize', scheduleGlowUpdate);
+  reducedMotion.addEventListener('change', scheduleGlowUpdate);
+  scheduleGlowUpdate();
+}
+
 const motionToggle = document.querySelector('[data-motion-toggle]');
 const films = document.querySelectorAll('[data-motion]');
 

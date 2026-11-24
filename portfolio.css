@@ -39,6 +39,23 @@ img { display: block; max-width: 100%; }
 .hero { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(620px, 92svh, 860px); overflow: hidden; background: var(--back); }
 .hero-media, .hero::after { position: absolute; z-index: -1; inset: 0; }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 59% center; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-media::after {
+    --glow-mask: radial-gradient(ellipse, black 8%, #000b 30%, transparent 69%);
+    content: "";
+    position: absolute;
+    left: calc(var(--glow-start-x, 86%) - var(--glow-travel, 43%) * var(--glow-progress, 0));
+    top: calc(var(--glow-start-y, 54%) + var(--glow-drop, 16%) * var(--glow-progress, 0));
+    width: clamp(170px, 36vw, 550px);
+    height: 72%;
+    transform: translate(-50%, -50%);
+    -webkit-mask-image: var(--glow-mask);
+    mask-image: var(--glow-mask);
+    -webkit-backdrop-filter: brightness(1.48) saturate(1.14);
+    backdrop-filter: brightness(1.48) saturate(1.14);
+    pointer-events: none;
+  }
+}
 .hero::after {
   content: "";
   background: linear-gradient(0deg, var(--canvas), #1d110e7a 13%, transparent 34%),
@@ -171,8 +188,16 @@ h2 { font-size: clamp(47px, 6.75vw, 100px); font-weight: 670; line-height: .97; 
   .hero h1 { margin-top: 14px; font-size: clamp(42px, 12.7vw, 84px); }
   .lede { max-width: 358px; margin-top: 18px; }
   .hero-actions { margin-top: 17px; }
-  .hero-media { inset: auto 0 0; height: clamp(350px, 103vw, 650px); }
+  .hero-media {
+    --glow-start-x: 82%;
+    --glow-travel: 52%;
+    --glow-start-y: 41%;
+    --glow-drop: 29%;
+    inset: auto 0 0;
+    height: clamp(350px, 103vw, 650px);
+  }
   .hero-media img { object-position: center 58%; }
+  .hero-media::after { width: clamp(132px, 46vw, 230px); height: 60%; }
   .hero::after {
     background: linear-gradient(0deg, var(--canvas), transparent 23%),
                 linear-gradient(180deg, var(--back) 29%, #100b09ed 40%, #100b098c 60%, transparent 76%);
